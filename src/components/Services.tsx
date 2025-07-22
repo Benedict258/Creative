@@ -8,7 +8,7 @@ const Services = () => {
     {
       icon: Zap,
       name: 'Starter',
-      price: '$2,997',
+      price: '',
       description: 'Perfect for creators and small businesses',
       popular: false,
       features: [
@@ -23,7 +23,7 @@ const Services = () => {
     {
       icon: Star,
       name: 'Growth',
-      price: '$4,997',
+      price: '',
       description: 'For businesses ready to scale',
       popular: true,
       features: [
@@ -40,7 +40,7 @@ const Services = () => {
     {
       icon: Crown,
       name: 'Premium',
-      price: '$7,997',
+      price: '',
       description: 'Complete digital transformation',
       popular: false,
       features: [
@@ -102,7 +102,7 @@ const Services = () => {
                   </div>
                   
                   <h3 className="font-heading text-2xl font-bold mb-2">{service.name}</h3>
-                  <div className="text-4xl font-bold mb-2">{service.price}</div>
+                  {service.price && <div className="text-4xl font-bold mb-2">{service.price}</div>}
                   <p className="text-muted-foreground">{service.description}</p>
                 </div>
 
